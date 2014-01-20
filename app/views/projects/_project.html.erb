@@ -1,0 +1,9 @@
+<p>
+  <strong>Title</strong>
+  <%= project.title %>
+  <strong>Description:</strong>
+  <%= project.description %>
+  <%= link_to 'Delete Project', [project.client, project],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>
